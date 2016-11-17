@@ -1,0 +1,15 @@
+.ball span {
+	display: block;
+	color: white;
+	margin-left: 10px;
+	padding-top: 5px;
+}
+
+.ball {
+	display: inline-block;
+	background: #31708f;
+	border-radius: 50%;
+	height: 30px;
+	width: 30px;
+	margin: 0;
+}

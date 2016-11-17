@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Logics game</title>
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+		<div class="row">
+			<div style="background-image: url(images/equal.gif); height: 1000px;" class="col-sm-10">
+
+				<button id="compare" style="position: absolute;left: 596px;top: 80px;" class="btn btn-primary">Compare</button>
+				<div id="firstScalePrepare">
+					<figure id="firstScalepanBall1" data-number="1" class="ball"><span>1</span></figure>
+					<figure id="firstScalepanBall2" data-number="2" class="ball"><span>2</span></figure>
+					<figure id="firstScalepanBall3" data-number="3" class="ball"><span>3</span></figure>
+					<figure id="firstScalepanBall4" data-number="4" class="ball"><span>4</span></figure>
+					<figure id="firstScalepanBall5" data-number="5" class="ball"><span>5</span></figure>
+					<figure id="firstScalepanBall6" data-number="6" class="ball"><span>6</span></figure>
+					<figure id="firstScalepanBall7" data-number="7" class="ball"><span>7</span></figure>
+					<figure id="firstScalepanBall8" data-number="8" class="ball"><span>8</span></figure>
+					<figure id="firstScalepanBall9" data-number="9" class="ball"><span>9</span></figure>
+				</div>
+
+
+
+				<div id="secondScalePrepare">
+					<figure id="secondScalepanBall1" data-number="1" class="ball"><span>1</span></figure>
+					<figure id="secondScalepanBall2" data-number="2" class="ball"><span>2</span></figure>
+					<figure id="secondScalepanBall3" data-number="3" class="ball"><span>3</span></figure>
+					<figure id="secondScalepanBall4" data-number="4" class="ball"><span>4</span></figure>
+					<figure id="secondScalepanBall5" data-number="5" class="ball"><span>5</span></figure>
+					<figure id="secondScalepanBall6" data-number="6" class="ball"><span>6</span></figure>
+					<figure id="secondScalepanBall7" data-number="7" class="ball"><span>7</span></figure>
+					<figure id="secondScalepanBall8" data-number="8" class="ball"><span>8</span></figure>
+					<figure id="secondScalepanBall9" data-number="9" class="ball"><span>9</span></figure>
+				</div>
+
+
+				<div id="firstScale">
+					<figure style="position: absolute;left: 120px;top: 626px;" data-number="1" class="ball invisible"><span>1</span></figure>
+					<figure style="position: absolute;left: 153px;top: 626px;" data-number="2" class="ball invisible"><span>2</span></figure>
+					<figure style="position: absolute;left: 186px;top: 626px;" data-number="3" class="ball invisible"><span>3</span></figure>
+					<figure style="position: absolute;left: 220px;top: 626px;" data-number="4" class="ball invisible"><span>4</span></figure>
+					<figure style="position: absolute;left: 277px;top: 626px;" data-number="5" class="ball invisible"><span>5</span></figure>
+					<figure style="position: absolute;left: 293px;top: 601px;" data-number="6" class="ball invisible"><span>6</span></figure>
+					<figure style="position: absolute;left: 310px;top: 626px;" data-number="7" class="ball invisible"><span>7</span></figure>
+					<figure style="position: absolute;left: 343px;top: 626px;" data-number="8" class="ball invisible"><span>8</span></figure>
+					<figure style="position: absolute;left: 376px;top: 626px;" data-number="9" class="ball invisible"><span>9</span></figure>
+				</div>
+
+
+				<div id="secondScale">
+					<figure style="position: absolute;left: 865px;top: 626px;" data-number="1" class="ball invisible"><span>1</span></figure>
+					<figure style="position: absolute;left: 898px;top: 626px;" data-number="2" class="ball invisible"><span>2</span></figure>
+					<figure style="position: absolute;left: 931px;top: 626px;" data-number="3" class="ball invisible"><span>3</span></figure>
+					<figure style="position: absolute;left: 965px;top: 626px;" data-number="4" class="ball invisible"><span>4</span></figure>
+					<figure style="position: absolute;left: 1022px;top: 626px;" data-number="5" class="ball invisible"><span>5</span></figure>
+					<figure style="position: absolute;left: 1038px;top: 601px;" data-number="6" class="ball invisible"><span>6</span></figure>
+					<figure style="position: absolute;left: 1055px;top: 626px;" data-number="7" class="ball invisible"><span>7</span></figure>
+					<figure style="position: absolute;left: 1088px;top: 626px;" data-number="8" class="ball invisible"><span>8</span></figure>
+					<figure style="position: absolute;left: 1121px;top: 626px;" data-number="9" class="ball invisible"><span>9</span></figure>
+				</div>
+
+			</div>
+
+
+			<div style="background-color: #468d6b; height: 1000px; font-size: 30px; color: white" class="col-sm-2">
+				<span>Number of balls: </span><span>9</span><br>
+				<span>Number of trials: </span><span>2</span>
+			</div>
+		</div>
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+	<script src="js/GameController.js"></script>
+	<script src="js/GameRenderer.js"></script>
+	<script type="application/javascript">
+		GameRenderer.init();
+		GameController.init();
+	</script>
+
+</body>
+</html>
