@@ -5,25 +5,32 @@ GameRenderer = (function () {
 	
 	var privateMethod = function () {};
 
-	gameRenderer.showBallsOnFirstScale = function (number) {
+	gameRenderer.showBallsOnFirstScale = function () {
 		$('#firstScale').children().each(function (counter) {
-			$(this).css("visibility", "invisible");
-			if (counter < number) {
-				$(this).css("visibility", "visible");
-			}
+				$(this).addClass("invisible");
+		});
+
+		$('#firstScalePrepare').children().each(function (counter) {
+			$(this).removeClass("invisible");
 		});
 	};
 
-	gameRenderer.showBallsOnSecondScale = function (number) {
-		$('#firstScale').children().each(function (counter) {
-			$(this).css("visibility", "invisible");
-			if (counter < number) {
-				$(this).css("visibility", "visible");
-			}
+	gameRenderer.showBallsOnSecondScale = function () {
+		$('#secondScale').children().each(function (counter) {
+			$(this).addClass("invisible");
 		});
+
+		$('#secondScalePrepare').children().each(function (counter) {
+			$(this).removeClass("invisible");
+		});
+	};
+
+	gameRenderer.updateTrialsNumber = function () {
+			$("#trialsNumber").text(GameController.trialsNumber);
 	};
 
 	gameRenderer.init = function () {
+
 
 		$("#firstScalepanBall1").css({
 			 	position: 'absolute',

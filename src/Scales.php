@@ -2,7 +2,7 @@
 namespace Game;
 
 use Game\Contracts\ScalesInterface;
-use Game\PhysicalObject;
+
 /**
  * This is the class for Scales.
  *

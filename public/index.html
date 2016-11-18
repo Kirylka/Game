@@ -67,8 +67,14 @@
 
 
 			<div style="background-color: #468d6b; height: 1000px; font-size: 30px; color: white" class="col-sm-2">
-				<span>Number of balls: </span><span>9</span><br>
-				<span>Number of trials: </span><span>2</span>
+				<span>Number of weighings: </span><span id="trialsNumber">2</span>
+				<form style="margin-top: 40px;" class="form-inline">
+					<div class="form-group">
+						<label for="ballNumberGuess">Number of a bigger ball</label>
+						<input type="text" class="form-control" id="ballNumberGuess"/>
+					</div>
+					<button id="checkGuess" type="submit" class="btn btn-default">Check</button>
+				</form>
 			</div>
 		</div>
 	<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
